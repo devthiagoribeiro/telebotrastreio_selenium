@@ -21,4 +21,4 @@ while True:
     navegador.refresh()
     info = navegador.find_element(By.XPATH, '/html/body/div[5]/div[1]/div[3]/table[2]/tbody/tr[2]/td[3]/p[1]').text
     bot.sendMessage(1167845071, f'📦O status atual da sua encomenda é:\n\n{info}')
-    sleep(7200)
+    navegador.implicitly_wait(7200)
