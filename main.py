@@ -8,7 +8,8 @@ import os
 
 channelid = os.environ.get('CHANNEL_ID')
 cpf = os.environ.get('CPF')
-bot = os.environ.get('BOT_TOKEN') #telepot.Bot('5641283166:AAEiLUp81ecbOuE28-OEWfntiVLjGVkwbsk')
+bot_token = os.environ.get('BOT_TOKEN') #telepot.Bot('5641283166:AAEiLUp81ecbOuE28-OEWfntiVLjGVkwbsk')
+bot = telepot.Bot(bot_token)
 chrome_options = webdriver.ChromeOptions()
 chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
 chrome_options.add_argument("--headless")
