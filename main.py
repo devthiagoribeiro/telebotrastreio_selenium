@@ -4,7 +4,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from time import sleep
 import telepot
-import chromedriver_autoinstaller
 import os
 
 channelid = os.environ.get('CHANNEL_ID')
